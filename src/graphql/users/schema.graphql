@@ -1,0 +1,51 @@
+type User {
+    id: ID!,
+    first_name: String!,
+    last_name: String!,
+    age: Int!,
+    created_at: String!,
+    updated_at: String!,
+    books: [Book]!,
+}
+
+input UpdateUser {
+    id: ID!,
+    first_name: String!,
+    last_name: String!,
+    age: Int!,
+}
+
+type UpdatedUser {
+    id: ID!,
+    first_name: String!,
+    last_name: String!,
+    age: Int!,
+    created_at: String!,
+    updated_at: String!,
+}
+
+input CreateUser {
+    first_name: String!,
+    last_name: String!,
+    age: Int!,
+}
+
+type CreatedUser {
+    id: ID!,
+    first_name: String!,
+    last_name: String!,
+    age: Int!,
+    created_at: String!,
+    updated_at: String!,
+}
+
+type Query {
+    users: [User]!,
+    user(id: ID!): User,
+}
+
+type Mutation {
+    createUser(input: CreateUser): CreatedUser!,
+    updateUser(input: UpdateUser): UpdatedUser!,
+    deleteUser(id: ID!): String!,
+}
