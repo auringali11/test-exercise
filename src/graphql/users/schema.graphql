@@ -1,10 +1,12 @@
+scalar Date
+
 type User {
     id: ID!,
     first_name: String!,
     last_name: String!,
     age: Int!,
-    created_at: String!,
-    updated_at: String!,
+    created_at: Date!,
+    updated_at: Date!,
     books: [Book]!,
 }
 
@@ -20,8 +22,8 @@ type UpdatedUser {
     first_name: String!,
     last_name: String!,
     age: Int!,
-    created_at: String!,
-    updated_at: String!,
+    created_at: Date!,
+    updated_at: Date!,
 }
 
 input CreateUser {
@@ -35,8 +37,8 @@ type CreatedUser {
     first_name: String!,
     last_name: String!,
     age: Int!,
-    created_at: String!,
-    updated_at: String!,
+    created_at: Date!,
+    updated_at: Date!,
 }
 
 type Query {

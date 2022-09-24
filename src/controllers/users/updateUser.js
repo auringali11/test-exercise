@@ -6,7 +6,6 @@ module.exports = {
         if (!user) {
             throw new Error('USER_DOES_NOT_EXIST');
         };
-        data.updated_at = new Date();
         const result = await UserRepository.updateUser(data);
         return result;
     },
