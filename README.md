@@ -1,5 +1,5 @@
-# Users library
-Users library is a project to store users' data and the books they have read.
+# Users book list
+Users book list is a project to store users' data and the books they have read.
 
 ## Installation
 Use the package manager [npm](https://www.npmjs.com/) to install dependencies.
