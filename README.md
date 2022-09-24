@@ -16,6 +16,10 @@ Run:
 docker compose up --build
 ```
 
+## ERD of the Database
+![image](https://user-images.githubusercontent.com/99865495/192115782-26fae888-75ed-4a64-8b3e-16781c829482.png)
+
+
 ## Methods
 The use of Users methods in the GraphQL Playground are given below:
 ### Get all users
@@ -162,7 +166,3 @@ mutation{
   deleteBook(id: 3)
 }
 ```
-
-## ERD of the Database
-![image](https://user-images.githubusercontent.com/99865495/192115782-26fae888-75ed-4a64-8b3e-16781c829482.png)
-
