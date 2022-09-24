@@ -76,7 +76,7 @@ mutation{
 ### Update user
 ```graphql
 mutation{
-  updateUser(input: {id: 3, first_name: "updated first name", last_name: "updated last name", age: 20 }){
+  updateUser(input: {id: 4, first_name: "updated first name", last_name: "updated last name", age: 20 }){
     id
     first_name
     last_name
@@ -90,7 +90,7 @@ mutation{
 ### Delete user
 ```graphql
 mutation{
-  deleteUser(id: 1)
+  deleteUser(id: 4)
 }
 ```
 
@@ -151,7 +151,7 @@ mutation{
 ### Update book
 ```graphql
 mutation{
-  updateBook(input: { id: 3, title: "Updated book", author: "Updated author", user_id: 1}){
+  updateBook(input: { id: 4, title: "Updated book", author: "Updated author", user_id: 1}){
     id
     title
     author
@@ -163,6 +163,6 @@ mutation{
 ### Delete book
 ```graphql
 mutation{
-  deleteBook(id: 3)
+  deleteBook(id: 4)
 }
 ```
