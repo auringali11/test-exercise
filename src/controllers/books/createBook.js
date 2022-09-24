@@ -1,12 +1,12 @@
 const BookRepository = require('../../repository/books');
+const UserRepository = require('../../repository/users');
 
 module.exports = {
     createBook: async (data) => {
-        const book = await BookRepository.selectByTitle(data.title);
-        if(book){
-            throw new Error('BOOK_ALREADY_EXISTS');
+        const user = await UserRepository.selectById(data.user_id);
+        if(!user) {
+            throw new Error('USER_DOES_NOT_EXIST');
         };
-        data.created_at = new Date();
         const createdBook = await BookRepository.insertBook(data);
         return createdBook;
     },
