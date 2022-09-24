@@ -21,8 +21,8 @@ exports.resolver = {
             return updatedBook;
         },
         deleteBook: async (_, args) => {
-            const message = await booksController.deleteBook(args.id);
-            return message;
+            const result = await booksController.deleteBook(args.id);
+            return result;
         },
     },
 };

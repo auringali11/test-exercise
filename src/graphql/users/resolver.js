@@ -21,8 +21,8 @@ exports.resolver = {
             return updatedUser;
         },
         deleteUser: async (_, args) => {
-            const message = await usersController.deleteUser(args.id);
-            return message;
+            const result = await usersController.deleteUser(args.id);
+            return result;
         },
     },
 };
