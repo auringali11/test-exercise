@@ -9,7 +9,7 @@ npm install
 ```
 
 ## Starting application
-Make sure you have Docker and docker-compose instlled on your device.
+Make sure you have Docker and docker-compose installed on your device.
 
 Run: 
 ```bash
